@@ -7,9 +7,11 @@ from io import StringIO
 import urllib.parse
 import urllib.request
 
+import secret_key
 
-subscription_key = '838b012b4a6f46acacfca98228ced4bb'
+subscription_key = secret_key.key
 assert subscription_key
+
 text_analytics_base_url = "https://eastasia.api.cognitive.microsoft.com/text/analytics/v2.0/"
 
 #language_api_url = text_analytics_base_url + "languages"
